@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evalyo — Modern DMOJ Fork</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gradient-to-b from-gray-50 to-white text-slate-900">
+  <header class="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between">
+    <div class="flex items-center gap-4">
+      <img src="https://github.com/Evalyo/evalyo/blob/master/logo.png?raw=true" alt="Evalyo" class="w-12 h-12 object-contain" />
+      <div>
+        <h1 class="text-2xl font-semibold">Evalyo</h1>
+        <p class="text-sm text-slate-600">A modern, maintainable fork of DMOJ — built for scale.</p>
+      </div>
+    </div>
+    <nav class="flex items-center gap-3">
+      <a href="https://github.com/Evalyo/evalyo" target="_blank" class="inline-flex items-center gap-2 px-3 py-2 border rounded-md text-sm font-medium hover:bg-slate-100">GitHub</a>
+      <a href="#get-started" class="inline-flex items-center gap-2 px-3 py-2 bg-slate-900 text-white rounded-md text-sm font-medium">Get Started</a>
+    </nav>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6">
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-12">
+      <div>
+        <h2 class="text-4xl font-extrabold tracking-tight">Modern judge platform, built to last.</h2>
+        <p class="mt-4 text-lg text-slate-600">Evalyo rethinks DMOJ for today's infra: Django 5.2 LTS, native ASGI, clear separation of services, and developer ergonomics that don't make you cry.</p>
+
+        <div class="mt-6 flex flex-wrap gap-3">
+          <span class="px-3 py-1 bg-green-50 text-green-800 rounded-full text-sm">Django 5.2 LTS</span>
+          <span class="px-3 py-1 bg-blue-50 text-blue-800 rounded-full text-sm">Native ASGI</span>
+          <span class="px-3 py-1 bg-indigo-50 text-indigo-800 rounded-full text-sm">Docker-friendly</span>
+          <span class="px-3 py-1 bg-yellow-50 text-yellow-800 rounded-full text-sm">Scalable by design</span>
+        </div>
+
+        <div class="mt-6 flex gap-3">
+          <a href="https://github.com/Evalyo/evalyo" target="_blank" class="px-4 py-2 bg-black text-white rounded-md text-sm font-medium">View on GitHub</a>
+          <a href="#quick-start" class="px-4 py-2 border rounded-md text-sm font-medium">Quick start</a>
+        </div>
+      </div>
+
+      <div class="bg-gradient-to-br from-white to-slate-50 rounded-2xl border p-6 shadow-sm">
+        <h3 class="text-lg font-semibold">Why Evalyo?</h3>
+        <ul class="mt-4 space-y-3 text-slate-600">
+          <li>✅ <strong>Maintenance-first</strong>: clear code paths, fewer implicit couplings.</li>
+          <li>✅ <strong>ASGI native</strong>: websockets & async views first-class.</li>
+          <li>✅ <strong>Django 5.2 LTS</strong>: stability for production-grade deployments.</li>
+          <li>✅ <strong>Modular judge</strong>: separate worker + API boundaries for scale.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="features" class="py-8">
+      <h3 class="text-2xl font-bold">Core features</h3>
+      <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="p-4 border rounded-lg bg-white"><h4 class="font-semibold">Django 5.2 LTS</h4><p class="mt-2 text-sm text-slate-600">Long-term support and modern Django features.</p></div>
+        <div class="p-4 border rounded-lg bg-white"><h4 class="font-semibold">ASGI-first</h4><p class="mt-2 text-sm text-slate-600">Native async, WebSocket scoreboard, and high concurrency.</p></div>
+        <div class="p-4 border rounded-lg bg-white"><h4 class="font-semibold">Separation of Concerns</h4><p class="mt-2 text-sm text-slate-600">Judge workers, API, and web UI are decoupled for reliability.</p></div>
+        <div class="p-4 border rounded-lg bg-white"><h4 class="font-semibold">Dev DX</h4><p class="mt-2 text-sm text-slate-600">Batteries-included dev stack: docker-compose, tests, migrations.</p></div>
+        <div class="p-4 border rounded-lg bg-white"><h4 class="font-semibold">Observability</h4><p class="mt-2 text-sm text-slate-600">Prometheus metrics, structured logs, health endpoints.</p></div>
+        <div class="p-4 border rounded-lg bg-white"><h4 class="font-semibold">Extensible</h4><p class="mt-2 text-sm text-slate-600">Plugin-friendly problem types & custom judge runners.</p></div>
+      </div>
+    </section>
+
+    <section id="quick-start" class="py-8">
+      <h3 class="text-2xl font-bold">Quick start</h3>
+      <p class="mt-3 text-slate-600">Clone, env, and bring up using Docker — zero mystery.</p>
+
+      <pre class="mt-4 rounded-md bg-slate-900 text-slate-100 p-4 text-sm overflow-auto">git clone https://github.com/Evalyo/evalyo.git
+cd evalyo
+# copy .env.example -> .env and edit
+docker compose up --build -d
+# visit http://localhost:8000</pre>
+
+      <p class="mt-3 text-sm text-slate-500">Prefer manual? The repo supports running with plain Python + ASGI servers (uvicorn/daphne).</p>
+    </section>
+
+    <section id="get-started" class="py-8">
+      <h3 class="text-2xl font-bold">Get involved</h3>
+      <div class="mt-4 flex gap-3">
+        <a href="https://github.com/Evalyo/evalyo" target="_blank" class="px-4 py-2 bg-black text-white rounded-md text-sm font-medium">Contribute</a>
+        <a href="mailto:hello@evalyo.org" class="px-4 py-2 border rounded-md text-sm font-medium">Request demo</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mt-12 border-t py-6">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-slate-600">Evalyo — DMOJ fork built for maintainability & scale. © <script>document.write(new Date().getFullYear())</script></p>
+      <div class="text-sm text-slate-600">Built on Django 5.2 LTS • ASGI native • <a href="https://github.com/Evalyo/evalyo" class="underline">Repo</a></div>
+    </div>
+  </footer>
+</body>
+</html>
